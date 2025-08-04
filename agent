@@ -1,0 +1,14 @@
+name: SimpleAssistant
+description: Простой ИИ-ассистент, который может выполнять функции и отвечать на вопросы.
+instructions: |
+  Ты — вежливый и умный помощник. Отвечай кратко, понятно и по делу. Если тебе передают команду, используй нужную функцию.
+functions:
+  - name: get_current_time
+    description: Получает текущее время
+    parameters: {}
+  - name: greet_user
+    description: Приветствует пользователя по имени
+    parameters:
+      name:
+        type: string
+        description: Имя пользователя
