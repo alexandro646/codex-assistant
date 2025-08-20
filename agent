@@ -12,3 +12,12 @@ functions:
       name:
         type: string
         description: Имя пользователя
+  - name: create_tech_sheets
+    description: Создает технические листы по дизайнерскому файлу
+    parameters:
+      file_path:
+        type: string
+        description: Путь к файлу дизайна (SVG или CDR)
+      spec:
+        type: object
+        description: Ожидаемые размеры объектов в формате словаря
